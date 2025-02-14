@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: 'Cursive', sans-serif;
+}
+
+.background {
+    position: relative;
+    background-image: url('your-garden-image.jpg'); /* Add your garden background image here */
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.writing {
+    font-size: 2em;
+    color: #fff;
+    opacity: 0;
+    animation: reveal 5s forwards;
+}
+
+@keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.floating-heart {
+    position: absolute;
+    animation: floating-hearts 5s infinite;
+    font-size: 30px;
+    color: #ff007f;
+    opacity: 0;
+}
+
+@keyframes floating-hearts {
+    0% { top: 100%; left: 50%; opacity: 1; }
+    100% { top: 0%; left: 50%; opacity: 0; }
+}
+
+.proposal {
+    font-size: 3em;
+    color: goldenrod;
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+}
